@@ -42,7 +42,8 @@ position: relative;
     min-width: 130px;
     cursor: pointer;
     text-align: center;
-    background: #FFB3C6;
+    background: #FB6F92;
+    color: white;
     border-radius: 4px;
     margin-top: 10px;
     padding: 0.5rem 0;
@@ -54,7 +55,7 @@ position: relative;
 /* changing the background color of a elements when they are hovered over or tabbed/clicked onto */
 .menubar a:hover,
 .menubar a:focus {
-    background: palegreen;
+    background: #FFB3C6;
     color: black;
     text-decoration: underline;
     display:block;
@@ -93,18 +94,40 @@ position: relative;
 }
 
 
-.archivo-black-regular, p {
-        font-family: "Archivo Black", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+
+
+.footer{
+    display: flex;
+    height: 100%;
+    width:100%;
+}
+
+.footer-svg{
+    width: 20px;
+    flex-direction: flex-start;
 }
 
 
-.bebas-neue-regular, nav {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+/* fonts used in the project */
+
+.comic-neue-regular,p, nav {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.comic-neue-bold {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 
 
