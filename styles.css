@@ -228,9 +228,9 @@ main{
   gap: 1rem;
 }
 
-.main-photo{
+.main-photo img{
   width: 50%;
-  max-width: 100px;
+  max-width: 1400px;
   border-radius: 6px;
 }
 
