@@ -131,3 +131,75 @@ position: relative;
 
 
 
+/* ===== Adopt & Foster page ===== */
+
+.adopt-foster {
+  padding: 1.5rem 1rem 2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.adopt-foster h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.adopt-foster p {
+  margin-bottom: 0.75rem;
+}
+
+
+.adopt-form {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #FFE5EC; 
+  border-radius: 0.75rem;
+}
+
+.adopt-form fieldset {
+  border: none;
+  padding: 0;
+}
+
+.adopt-form legend {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ced4da;
+  font: inherit;
+}
+
+
+.btn-primary {
+  background-color: #FB6F92; 
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #FFB3C6;
+  color: black;
+  outline: 2px solid #495057;
+  outline-offset: 2px;
+}

@@ -1,36 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Paws &amp; Purpose | Adopt &amp; Foster</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delius&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
   <header>
     <nav>
-      <a class="logo" href="index.html">Paws &amp; Purpose</a>
       <ul class="menubar">
         <li><a href="index.html">Home</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="adopt.html"><Adopt/Foster</a></li>
+        <li><a href="adopt.html">Adopt &amp; Foster</a></li>
       </ul>
     </nav>
+
+    <h1>Adopt &amp; Foster</h1>
   </header>
 
-    <main>
-        <section class="adopt-foster">
-        <h1>Adopt/Foster</h1>
-        <p>At Paws &amp; Purpose, we are dedicated to finding loving homes for our cats. Whether you're looking to adopt a new furry friend or provide temporary care through fostering, we're here to help!</p>
-        
-        <h2>Adoption Process</h2>
-        <p>To adopt a cat, please visit our <a href="gallery.html">Meet the Cats</a> page to see our available felines. Once you've found a cat you'd like to adopt, fill out our adoption application form and schedule a meet-and-greet.</p>
-        
-        <h2>Fostering Opportunities</h2>
-        <p>Fostering is a wonderful way to help cats in need while providing them with a safe and loving environment. If you're interested in becoming a foster parent, please contact us at <a href="mailto:pawsandpurpose@gmail.com">pawsandpurpose@gmail.com</a>.</p>
-        </section>
-    </main>
+  <main>
+    <section class="adopt-foster">
 
-    
+      <p>
+        At Paws &amp; Purpose, we’re focused on matching each cat with a home where they can feel
+        safe, loved, and understood. Whether you’re ready to adopt or you’re curious about fostering,
+        this is where you can get started.
+      </p>
+
+      <h2>Adoption process</h2>
+      <p>
+        To adopt, first visit our <a href="gallery.html">Gallery</a> page and learn more about the cats
+        currently looking for homes. When you see a potential match, use the form below to tell us a bit more
+        about yourself and who you’re interested in meeting. We’ll follow up to schedule a meet-and-greet.
+      </p>
+
+      <h2>Fostering opportunities</h2>
+      <p>
+        Fostering gives cats a calm place to decompress, build trust, and get ready for their forever home.
+        If you’re not sure you’re ready to adopt, fostering is a great way to help in a big way. You can use
+        the same form below to let us know you’re interested in fostering and what kind of situation might fit
+        your home and schedule.
+      </p>
+
+      <h2>Tell us about yourself</h2>
+      <p>
+        Use this form to share a little bit about your home, your routine, and whether you’re hoping to
+        adopt, foster, or both.
+      </p>
+
+      <form class="adopt-form" action="#" method="post">
+        <fieldset>
+          <legend>Adopt or foster interest form</legend>
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel">
+          </div>
+
+          <div class="form-group">
+            <label for="interest">Are you interested in adopting, fostering, or both?</label>
+            <input id="interest" name="interest" type="text" required>
+          </div>
+
+          <div class="form-group">
+            <label for="about">Tell us about your home and the kind of cat you’re hoping for</label>
+            <textarea id="about" name="about" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-svg">
+      <img src="cat-svgrepo-com (1).svg" alt="Simple cat face logo">
+    </div>
+
+    <p>
+      Phone: 123-456-789<br>
+      Email: pawsandpurpose@gmail.com
+    </p>
+  </footer>
+
+</body>
+</html>
