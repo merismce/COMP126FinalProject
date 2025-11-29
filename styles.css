@@ -229,8 +229,8 @@ main{
 }
 
 .main-photo{
-  width: 100%;
-  max-width: 500px;
+  width: 50%;
+  max-width: 100px;
   border-radius: 6px;
 }
 
