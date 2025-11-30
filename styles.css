@@ -96,19 +96,7 @@ position: relative;
 
 
 
-.footer{
-    display: flex;
-    height: 100%;
-    width:100%;
-}
-
-.footer-svg{
-    width: 20px;
-    flex-direction: flex-start;
-}
-
-
-/* fonts used in the project */
+/* fonts used in the project -- for all pages*/
 
 .comic-neue-regular,p, nav {
   font-family: "Comic Neue", cursive;
@@ -127,6 +115,10 @@ position: relative;
   font-weight: 400;
   font-style: normal;
 }
+
+
+
+/* ===== Index/home page ===== */
 
 
 
@@ -205,3 +197,147 @@ position: relative;
 }
 
 /* Volunteer page */
+
+
+
+
+
+
+
+
+
+
+/* ===== Meet me/ Gallery page ===== */
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: #FFE5EC;
+}
+
+.cats-container {
+    padding: 20px;
+}
+
+.cat-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: #FFB3C6;
+}
+
+.cat-photo {
+    width: 300px;
+    height: 270px;
+    object-fit: cover;
+    border: 2px solid black;
+    align-self: center;
+}
+
+.cat-info {
+    flex: 1;
+}
+
+.cat-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cat-gender {
+    font-size: 1rem;
+    color: #495057;
+}
+
+.cat-about {
+    line-height: 1.5;
+}
+
+
+
+
+/* ------This footer is currently used for the home, gallery adn adopt page --------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: end; 
+    height: 100%;
+    width:100%;
+    background-color: #FB6F92;
+    justify-content: space-between;
+    padding: 20px;
+    /* border-top: 2px solid black; */
+}
+/* how to make the text go to the end??? */
+
+
+.footer-svg{
+    /* width: 10px; */
+    align-items: start;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.contact-info-for-footer{
+    align-items: end;
+}
+
+
+
+
+
+/* RESPONSIVE for all (what it would look like as desktop) */
+@media screen and (min-width: 600px) {
+
+    /* stuuf for gallery page */
+
+    h1{
+        border: 2px dotted grey ;
+        border-radius: 20px;
+    }
+    
+    .cat-card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 2px solid black;
+        padding: 20px;
+        margin-bottom: 25px;
+        background: #FFB3C6;
+    }
+
+    .cat-photo {
+        width: 300px;
+        height: 270px;
+        object-fit: cover;
+        border: 2px solid black;
+    }
+
+
+
+    /* stuuf for Home page */
+
+
+
+
+
+
+    /*  for adopt page */
+
+
+
+
+
+    /*  for Volunteer page */
+
+
+}
