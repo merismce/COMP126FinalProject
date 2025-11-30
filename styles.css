@@ -221,6 +221,18 @@ position: relative;
 }
 
 /* Volunteer page */
+main{
+  grid-area: content;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.main-photo{
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+}
 
 
 
