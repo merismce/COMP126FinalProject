@@ -313,6 +313,7 @@ footer{
         padding: 20px;
         margin-bottom: 25px;
         background: #FFB3C6;
+        width: 30%;
     }
 
     .cat-photo {
@@ -320,6 +321,12 @@ footer{
         height: 270px;
         object-fit: cover;
         border: 2px solid black;
+    }
+
+    .cat-info{
+
+        /* display:flex;
+        flex-direction: row; */
     }
 
 
