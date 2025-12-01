@@ -211,7 +211,9 @@ position: relative;
 
 h1{
     text-align: center;
+    padding: 30px;
 }
+
 
 body{
     background-color: #FFE5EC;
@@ -260,6 +262,27 @@ body{
 }
 
 
+.disclaimer-title{
+    color: red;
+    font-weight: bold;
+
+}
+
+.disclaimer{
+    color: red;
+}
+
+.disclaimer section{
+    display: flex;
+    background: white;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 25px;
+
+}
 
 
 /* ------This footer is currently used for the home, gallery adn adopt page --------------*/
@@ -273,7 +296,6 @@ footer{
     width:100%;
     background-color: #FB6F92;
     justify-content: space-between;
-    padding: 20px;
     /* border-top: 2px solid black; */
 }
 /* how to make the text go to the end??? */
@@ -289,7 +311,8 @@ footer{
 }
 
 .contact-info-for-footer{
-    align-items: end;
+    display: inline-block;
+    /* align-items: end; */
 }
 
 
@@ -307,8 +330,8 @@ footer{
     }
     
     .cat-card {
-        display: flex;
-        flex-direction: column;
+        display: inline-block;
+        /* flex-direction: column; */
         gap: 10px;
         border: 2px solid black;
         padding: 20px;
