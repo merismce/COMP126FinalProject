@@ -352,7 +352,7 @@ footer{
   margin: 0 auto; 
   padding: 2rem; 
   text-align: center; 
-  width: 300px; } 
+  width: 300px;} 
   
   .volunteer-photo{ 
     object-fit: cover; 
@@ -363,8 +363,16 @@ footer{
 
 .volunteer-events-title{
   background-color: #FB6F92;
-  border-radius: 20px;
+  border-radius: 10px;
 }
+
+
+
+
+
+
+
+
 /* Volunteer page */
 /*main{
   grid-area: content;
