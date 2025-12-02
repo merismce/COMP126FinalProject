@@ -1,13 +1,7 @@
- * {
-    margin: 0;
- }
-
-
- /* body {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 14px;
-background: whitesmoke
-} */
+body {
+font-family: "Comic Neue", "Delius";
+font-size: 18px;
+} 
 
 html, body {
     margin: 0;
@@ -142,9 +136,8 @@ position: relative;
 
 .buttons-container{
     border: 1px solid blueviolet;
-
-
 }
+
 
 
 /* ===== Adopt/Foster contact form ===== */
@@ -218,18 +211,12 @@ position: relative;
 
 
 
-
-
-
-
-
 /* ===== Meet me/ Gallery page ===== */
 
 h1{
     text-align: center;
     padding: 30px;
 }
-
 
 body{
     background-color: #FFE5EC;
@@ -260,20 +247,6 @@ body{
 
 .cat-info {
     flex: 1;
-}
-
-.cat-name {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-/* 
-.cat-gender {
-    font-size: 1rem;
-    color: #495057;
-} */
-
-.cat-about {
     line-height: 1.5;
 }
 
@@ -287,7 +260,6 @@ body{
     padding: 20px;
     margin-top: 100px;
     margin-bottom: 100px;
-
 }
 
 .disclaimer-title{
@@ -301,8 +273,7 @@ body{
 
 
 
-
-/* ------This footer is currently used for the home, gallery adn adopt page --------------*/
+/* ------This footer is currently used for the home, gallery and adopt page --------------*/
 
 footer{
     display: inline-block;
@@ -312,10 +283,7 @@ footer{
     width:100%;
     background-color: #FB6F92;
     justify-content: space-between;
-    /* border-top: 2px solid black; */
 }
-/* how to make the text go to the end??? */
-
 
 .footer-svg{
     align-items: start;
@@ -336,6 +304,8 @@ footer{
     margin-right: 30px;
     margin-bottom: 50px;
 }
+
+
 
 /* ===== Volunteer page ===== */
 .volunteer-section 
