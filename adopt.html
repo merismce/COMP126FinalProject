@@ -59,31 +59,32 @@
         adopt, foster, or both.
       </p>
 
-        <div class="container">
-            <form id="contact-form">
-                <h3>Adopt, Foster or Both Application Form</h3>
+       <div class="container">
+             <form id="contact-form">
+                <h3>Adopt, Foster, or Both Application Form</h3>
 
-                 <label for="name">Name:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required />
-
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required />
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required />
 
-                <label for="interest">I am interested in:</label>   
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" />
+
+                <label for="interest">I am interested in:</label>
                 <select id="interest" name="interest" required>
-                    <option value="">--Please choose an option--</option>
-                    <option value="adopt">Adopting a cat</option>
-                    <option value="foster">Fostering a cat</option>
-                    <option value="both">Both adopting and fostering</option>
+                    <option value="">-- Please choose an option --</option>
+                    <option value="Adopt">Adopt</option>
+                    <option value="Foster">Foster</option>
+                    <option value="Both">Both</option>
                 </select>
 
-                <label for="about">Tell us about yourself and why you want to adopt or foster:</label>
-                <textarea id="about" name="cat-about" rows="4" required></textarea>
+                <label for="message">Tell us about yourself:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
                 <button type="submit">Submit</button>
+
                 <p id="form-status"></p>
             </form>
         </div>
@@ -102,6 +103,38 @@
     </div>
     <!-- < maybe I could make the footer into a class to fit the picture/logo > footer class="footer"> -->
 </footer>
+<script>
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
 
+form.addEventListener("submit", (e) => {
+  // 1. STOP the default browser behavior
+  e.preventDefault();
+
+  status.innerText = "Sending your message...";
+
+  const data = new FormData(form);
+
+  // Your Google Script URL
+  const action = "https://script.google.com/macros/s/AKfycbx-dqQrogSJiR95qx-UkPoTH-ri8FRsrD6SnLCis6pIhSaofmOHg2ubblbSIEdRA-Wrzg/exec"
+
+  // 2. The Fetch Request with 'no-cors'
+  fetch(action, {
+    method: "POST",
+    body: data,
+    mode: "no-cors", // <--- THIS IS CRITICAL FOR GOOGLE SHEETS
+  })
+    .then(() => {
+      // With 'no-cors', we can't read the server response,
+      // so we assume success if no error was thrown.
+      status.innerText = "Message sent successfully!";
+      form.reset();
+    })
+    .catch((error) => {
+      status.innerText = "Oops! There was a problem.";
+      console.error("Error:", error);
+    });
+});
+</script>
 </body>
 </html>

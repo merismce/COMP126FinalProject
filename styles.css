@@ -147,7 +147,7 @@ position: relative;
 }
 
 
-/* ===== Adopt/Foster Form ===== */
+/* ===== Adopt/Foster contact form ===== */
 
 .container {
   max-width: 500px;
@@ -155,57 +155,67 @@ position: relative;
   padding: 1rem;
 }
 
-#adopt-form {
+#contact-form {
   background-color: #FFE5EC;
   padding: 1.5rem;
   border-radius: 0.75rem;
 }
 
-#adopt-form h3 {
-  font-weight: 700;
-  margin-bottom: 1rem;
+#contact-form h3 {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
-#adopt-form label {
+#contact-form label {
   display: block;
+  font-weight: 600;
   margin-top: 0.75rem;
   margin-bottom: 0.25rem;
-  font-weight: 600;
 }
 
-#adopt-form input,
-#adopt-form textarea {
+#contact-form input,
+#contact-form textarea,
+#contact-form select {
   width: 100%;
-  padding: 0.5rem;
+  padding: 6px;
   border: 1px solid #ced4da;
-  border-radius: 0.5rem;
-  font: inherit;
+  border-radius: 6px;
 }
 
-#adopt-form button {
+#contact-form button {
   margin-top: 1rem;
   background-color: #FB6F92;
   color: white;
+  padding: 0.5rem 1.25rem;
   border: none;
-  padding: 0.5rem 1.2rem;
   border-radius: 999px;
-  font-weight: 700;
   cursor: pointer;
+  font-weight: 700;
 }
 
-#adopt-form button:hover,
-#adopt-form button:focus {
+#contact-form button:hover {
   background-color: #FF8FAB;
   color: black;
-  outline: 2px solid #495057;
-  outline-offset: 2px;
 }
 
-#form-status {
-  margin-top: 0.75rem;
-  text-align: center;
+.adopt-foster {
+  max-width: 800px;      
+  margin: 0 auto;        
+  padding: 1.5rem 1rem;  
 }
+
+.adopt-foster h1, 
+.adopt-foster h2 {
+  margin-bottom: 0.75rem;
+}
+
+.adopt-foster p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+
+
 
 
 
