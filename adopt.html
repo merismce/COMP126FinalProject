@@ -61,32 +61,27 @@
 
       <form class="adopt-form" id="contact-form">
         <fieldset>
-          <legend>Adopt or foster interest form</legend>
+          <legend>Adopt, Foster, or Both Interest Form</Form></legend>
 
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required>
-          </div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required>
-          </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
 
-          <div class="form-group">
-            <label for="phone">Phone number</label>
-            <input id="phone" name="phone" type="tel">
-          </div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" />
 
-          <div class="form-group">
-            <label for="interest">Are you interested in adopting, fostering, or both?</label>
-            <input id="interest" name="interest" type="text" required>
-          </div>
+                <label for="interest">I am interested in:</label>
+                <select id="interest" name="interest" required>
+                    <option value="">-- Please choose an option --</option>
+                    <option value="Adopt">Adopt</option>
+                    <option value="Foster">Foster</option>
+                    <option value="Both">Both</option>
+                </select>
 
-          <div class="form-group">
-            <label for="about">Tell us about your home and the kind of cat you’re hoping for</label>
-            <textarea id="about" name="about" rows="4" required></textarea>
-          </div>
+                <label for="message">Tell us about yourself:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
           <button type="submit" class="btn-primary">Submit</button>
           <p id="form-status"></p>
@@ -101,7 +96,7 @@
 
 <footer>
     <div class="footer-svg"> 
-        <img src= "cat-svgrepo-com (1).svg" alt="the face of a cat in svg form" class="footer-img">
+        <img src= "logo.jpg" alt="the paws and purpose logo" class="footer-img">
     </div>
 
     <div class="contact-info-for-footer">
@@ -111,44 +106,38 @@
     </div>
     <!-- < maybe I could make the footer into a class to fit the picture/logo > footer class="footer"> -->
 </footer>
-
-
-  <script>
+<script>
 const form = document.getElementById("contact-form");
 const status = document.getElementById("form-status");
 
 form.addEventListener("submit", (e) => {
-// 1. STOP the default browser behavior
-e.preventDefault();
+  // 1. STOP the default browser behavior
+  e.preventDefault();
 
-status.innerText = "Sending your message...";
+  status.innerText = "Sending your message...";
 
-const data = new FormData(form);
+  const data = new FormData(form);
 
-// Your Google Script URL
-const action =
-“YOUR-GOOGLE-APPS-SCRIPT-URL-HERE";
+  // Your Google Script URL
+  const action = "https://script.google.com/macros/s/AKfycbx-dqQrogSJiR95qx-UkPoTH-ri8FRsrD6SnLCis6pIhSaofmOHg2ubblbSIEdRA-Wrzg/exec"
 
-// 2. The Fetch Request with 'no-cors'
-fetch(action, {
-method: "POST",
-body: data,
-mode: "no-cors", // <--- THIS IS CRITICAL FOR GOOGLE SHEETS
-})
-.then(() => {
-// With 'no-cors', we can't read the server response,
-// so we assume success if no error was thrown.
-status.innerText = "Message sent successfully!";
-form.reset();
-})
-.catch((error) => {
-status.innerText = "Oops! There was a problem.";
-console.error("Error:", error);
-});
+  // 2. The Fetch Request with 'no-cors'
+  fetch(action, {
+    method: "POST",
+    body: data,
+    mode: "no-cors", // <--- THIS IS CRITICAL FOR GOOGLE SHEETS
+  })
+    .then(() => {
+      // With 'no-cors', we can't read the server response,
+      // so we assume success if no error was thrown.
+      status.innerText = "Message sent successfully!";
+      form.reset();
+    })
+    .catch((error) => {
+      status.innerText = "Oops! There was a problem.";
+      console.error("Error:", error);
+    });
 });
 </script>
-
-
-
 </body>
 </html>

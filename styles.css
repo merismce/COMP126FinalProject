@@ -147,78 +147,76 @@ position: relative;
 }
 
 
-/* ===== Adopt & Foster page ===== */
+/* ===== Adopt/Foster contact form ===== */
 
-.adopt-foster {
-  padding: 1.5rem 1rem 2rem;
-  max-width: 60rem;
+.container {
+  max-width: 500px;
   margin: 0 auto;
-}
-
-.adopt-foster h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.adopt-foster p {
-  margin-bottom: 0.75rem;
-}
-
-
-.adopt-form {
-  margin-top: 1.5rem;
   padding: 1rem;
-  background-color: #FFE5EC; 
+}
+
+#contact-form {
+  background-color: #FFE5EC;
+  padding: 1.5rem;
   border-radius: 0.75rem;
 }
 
-.adopt-form fieldset {
-  border: none;
-  padding: 0;
-}
-
-.adopt-form legend {
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-}
-
-.form-group {
+#contact-form h3 {
+  text-align: center;
   margin-bottom: 1rem;
 }
 
-.form-group label {
+#contact-form label {
   display: block;
+  font-weight: 600;
+  margin-top: 0.75rem;
   margin-bottom: 0.25rem;
-  font-weight: 700;
 }
 
-.form-group input,
-.form-group textarea {
+#contact-form input,
+#contact-form textarea,
+#contact-form select {
   width: 100%;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  padding: 6px;
   border: 1px solid #ced4da;
-  font: inherit;
+  border-radius: 6px;
 }
 
-
-.btn-primary {
-  background-color: #FB6F92; 
+#contact-form button {
+  margin-top: 1rem;
+  background-color: #FB6F92;
   color: white;
+  padding: 0.5rem 1.25rem;
   border: none;
-  padding: 0.5rem 1.5rem;
   border-radius: 999px;
-  font-weight: 700;
   cursor: pointer;
+  font-weight: 700;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #FFB3C6;
+#contact-form button:hover {
+  background-color: #FF8FAB;
   color: black;
-  outline: 2px solid #495057;
-  outline-offset: 2px;
 }
+
+.adopt-foster {
+  max-width: 800px;      
+  margin: 0 auto;        
+  padding: 1.5rem 1rem;  
+}
+
+.adopt-foster h1, 
+.adopt-foster h2 {
+  margin-bottom: 0.75rem;
+}
+
+.adopt-foster p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+
+
+
 
 
 
