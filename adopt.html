@@ -59,9 +59,9 @@
         adopt, foster, or both.
       </p>
 
-       <div class="container">
-             <form id="contact-form">
-                <h3>Adopt, Foster, or Both Application Form</h3>
+      <form class="adopt-form" id="contact-form">
+        <fieldset>
+          <legend>Adopt, Foster, or Both Interest Form</Form></legend>
 
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required />
@@ -83,13 +83,16 @@
                 <label for="message">Tell us about yourself:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Submit</button>
-
-                <p id="form-status"></p>
-            </form>
-        </div>
+          <button type="submit" class="btn-primary">Submit</button>
+          <p id="form-status"></p>
+        </fieldset>
+      </form>
     </section>
   </main>
+
+
+  <!-- do not include method action in the form; only have an Id or a class for styling -->
+
 
 <footer>
     <div class="footer-svg"> 
