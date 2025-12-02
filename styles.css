@@ -147,78 +147,66 @@ position: relative;
 }
 
 
-/* ===== Adopt & Foster page ===== */
+/* ===== Adopt/Foster Form ===== */
 
-.adopt-foster {
-  padding: 1.5rem 1rem 2rem;
-  max-width: 60rem;
+.container {
+  max-width: 500px;
   margin: 0 auto;
-}
-
-.adopt-foster h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.adopt-foster p {
-  margin-bottom: 0.75rem;
-}
-
-
-.adopt-form {
-  margin-top: 1.5rem;
   padding: 1rem;
-  background-color: #FFE5EC; 
+}
+
+#adopt-form {
+  background-color: #FFE5EC;
+  padding: 1.5rem;
   border-radius: 0.75rem;
 }
 
-.adopt-form fieldset {
-  border: none;
-  padding: 0;
-}
-
-.adopt-form legend {
+#adopt-form h3 {
   font-weight: 700;
-  margin-bottom: 0.75rem;
-}
-
-.form-group {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
-.form-group label {
+#adopt-form label {
   display: block;
+  margin-top: 0.75rem;
   margin-bottom: 0.25rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
-.form-group input,
-.form-group textarea {
+#adopt-form input,
+#adopt-form textarea {
   width: 100%;
   padding: 0.5rem;
-  border-radius: 0.5rem;
   border: 1px solid #ced4da;
+  border-radius: 0.5rem;
   font: inherit;
 }
 
-
-.btn-primary {
-  background-color: #FB6F92; 
+#adopt-form button {
+  margin-top: 1rem;
+  background-color: #FB6F92;
   color: white;
   border: none;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 999px;
   font-weight: 700;
   cursor: pointer;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #FFB3C6;
+#adopt-form button:hover,
+#adopt-form button:focus {
+  background-color: #FF8FAB;
   color: black;
   outline: 2px solid #495057;
   outline-offset: 2px;
 }
+
+#form-status {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
 
 
 

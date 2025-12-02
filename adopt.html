@@ -59,38 +59,34 @@
         adopt, foster, or both.
       </p>
 
-      <form class="adopt-form" action="#" method="post">
-        <fieldset>
-          <legend>Adopt or foster interest form</legend>
+        <div class="container">
+            <form id="contact-form">
+                <h3>Adopt, Foster or Both Application Form</h3>
 
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required>
-          </div>
+                 <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required>
-          </div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required />
 
-          <div class="form-group">
-            <label for="phone">Phone number</label>
-            <input id="phone" name="phone" type="tel">
-          </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
 
-          <div class="form-group">
-            <label for="interest">Are you interested in adopting, fostering, or both?</label>
-            <input id="interest" name="interest" type="text" required>
-          </div>
+                <label for="interest">I am interested in:</label>   
+                <select id="interest" name="interest" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="adopt">Adopting a cat</option>
+                    <option value="foster">Fostering a cat</option>
+                    <option value="both">Both adopting and fostering</option>
+                </select>
 
-          <div class="form-group">
-            <label for="about">Tell us about your home and the kind of cat you’re hoping for</label>
-            <textarea id="about" name="about" rows="4" required></textarea>
-          </div>
+                <label for="about">Tell us about yourself and why you want to adopt or foster:</label>
+                <textarea id="about" name="cat-about" rows="4" required></textarea>
 
-          <button type="submit" class="btn-primary">Submit</button>
-        </fieldset>
-      </form>
+                <button type="submit">Submit</button>
+                <p id="form-status"></p>
+            </form>
+        </div>
     </section>
   </main>
 
