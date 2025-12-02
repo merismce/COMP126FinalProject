@@ -96,19 +96,7 @@ position: relative;
 
 
 
-.footer{
-    display: flex;
-    height: 100%;
-    width:100%;
-}
-
-.footer-svg{
-    width: 20px;
-    flex-direction: flex-start;
-}
-
-
-/* fonts used in the project */
+/* fonts used in the project -- for all pages*/
 
 .comic-neue-regular,p, nav {
   font-family: "Comic Neue", cursive;
@@ -129,6 +117,34 @@ position: relative;
 }
 
 
+
+/* ===== Index/home page ===== */
+.home-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-cat-pic{
+    justify-content: center;
+}
+
+.home-intro{
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Mission-title{
+    text-align: center;
+}
+
+
+.buttons-container{
+    border: 1px solid blueviolet;
+
+
+}
 
 
 /* ===== Adopt & Foster page ===== */
@@ -202,4 +218,218 @@ position: relative;
   color: black;
   outline: 2px solid #495057;
   outline-offset: 2px;
+}
+
+
+
+
+
+
+/* ===== Meet me/ Gallery page ===== */
+
+h1{
+    text-align: center;
+    padding: 30px;
+}
+
+
+body{
+    background-color: #FFE5EC;
+}
+
+.gallery-container {
+    padding: 20px;
+}
+
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: #FFB3C6;
+}
+
+.gallery-photo {
+    width: 300px;
+    height: 270px;
+    object-fit: cover;
+    border: 2px solid black;
+    align-self: center;
+}
+
+.cat-info {
+    flex: 1;
+}
+
+.cat-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* 
+.cat-gender {
+    font-size: 1rem;
+    color: #495057;
+} */
+
+.cat-about {
+    line-height: 1.5;
+}
+
+
+.disclaimer-section{
+    /* display: flex; */
+    background-color: white;
+    /* flex-direction: column; */
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.disclaimer-title{
+    color: red;
+    font-weight: bold;
+}
+
+.disclaimer{
+    color: red;
+}
+
+
+
+
+/* ------This footer is currently used for the home, gallery adn adopt page --------------*/
+
+footer{
+    display: inline-block;
+    gap: 10px;
+    text-align: end; 
+    height: 100%;
+    width:100%;
+    background-color: #FB6F92;
+    justify-content: space-between;
+    /* border-top: 2px solid black; */
+}
+/* how to make the text go to the end??? */
+
+
+.footer-svg{
+    align-items: start;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid black;
+    margin-left: 30px;
+}
+
+.footer-img{
+    width: 100px;
+    height:100px;
+}
+
+.contact-info-for-footer{
+    align-items: center; 
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+/* ===== Volunteer page ===== */
+.volunteer-section 
+{ background: #FB6F92; 
+  padding: 2rem; 
+  border-radius: 7px; } 
+
+.container-volunteer{ 
+  background-color: #FB6F92; 
+  border-radius: 10px; 
+  height: 270px; 
+  margin: 0 auto; 
+  padding: 2rem; 
+  text-align: center; 
+  width: 300px;} 
+  
+  .volunteer-photo{ 
+    object-fit: cover; 
+    border: 2px solid black; 
+    object-position: inherit; 
+    width: 100%; height: 100%; 
+    border-radius:4px; }
+
+.volunteer-events-title{
+  background-color: #FB6F92;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/* Volunteer page */
+/*main{
+  grid-area: content;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}*/ 
+
+
+
+
+/* RESPONSIVE for all (what it would look like as desktop) */
+@media screen and (min-width: 600px) {
+
+    /* stuuf for gallery page */
+
+    h1{
+        border: 2px dotted grey ;
+        border-radius: 20px;
+    }
+    
+    .gallery-card {
+        display: inline-block;
+        /* flex-direction: column; */
+        gap: 10px;
+        border: 2px solid black;
+        padding: 20px;
+        margin-bottom: 25px;
+        background: #FFB3C6;
+        width: 30%;
+    }
+
+    .gallery-photo {
+        width: 300px;
+        height: 270px;
+        object-fit: cover;
+        border: 2px solid black;
+    }
+
+
+
+
+
+    /* stuuf for Home page */
+
+
+
+
+
+
+    /*  for adopt page */
+
+
+
+
+
+    /*  for Volunteer page */
+
+
 }
