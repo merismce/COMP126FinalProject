@@ -220,24 +220,6 @@ position: relative;
   outline-offset: 2px;
 }
 
-/* Volunteer page */
-main{
-  grid-area: content;
-  padding: 1rem;
-  display: grid;
-  gap: 1rem;
-}
-
-.main-photo img{
-  width: 50%;
-  max-width: 1400px;
-  border-radius: 6px;
-}
-
-
-
-
-
 
 
 
@@ -357,6 +339,39 @@ footer{
     margin-bottom: 50px;
 }
 
+/* ===== Volunteer page ===== */
+.volunteer-section 
+{ background: #FB6F92; 
+  padding: 2rem; 
+  border-radius: 7px; } 
+
+.container-volunteer{ 
+  background-color: #FB6F92; 
+  border-radius: 10px; 
+  height: 270px; 
+  margin: 0 auto; 
+  padding: 2rem; 
+  text-align: center; 
+  width: 300px; } 
+  
+  .volunteer-photo{ 
+    object-fit: cover; 
+    border: 2px solid black; 
+    object-position: inherit; 
+    width: 100%; height: 100%; 
+    border-radius:4px; }
+
+.volunteer-events-title{
+  background-color: #FB6F92;
+  border-radius: 20px;
+}
+/* Volunteer page */
+/*main{
+  grid-area: content;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}*/ 
 
 
 
