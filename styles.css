@@ -18,10 +18,12 @@ nav {
 }
 
 .menubar {
-    padding-bottom: 18px;
+    padding-bottom: 10px;
     text-decoration: none; 
     text-align: right;
     list-style-type: none;
+    background-color: #FB6F92;
+
 }
 
 
@@ -247,7 +249,7 @@ body{
 
 .cat-info {
     flex: 1;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 
@@ -276,17 +278,19 @@ body{
 /* ------This footer is currently used for the home, gallery and adopt page --------------*/
 
 footer{
-    display: inline-block;
+    display: grid;
     gap: 10px;
     text-align: end; 
     height: 100%;
     width:100%;
     background-color: #FB6F92;
     justify-content: space-between;
+    padding-top: 50px;
 }
 
 .footer-svg{
-    align-items: start;
+    grid-column: 1;
+    justify-content: space-around ;
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -295,11 +299,13 @@ footer{
 }
 
 .footer-img{
+    justify-items: center;
     width: 100px;
     height:100px;
 }
 
 .contact-info-for-footer{
+    grid-column: 2;
     align-items: center; 
     margin-right: 30px;
     margin-bottom: 50px;
