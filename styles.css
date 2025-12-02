@@ -119,8 +119,32 @@ position: relative;
 
 
 /* ===== Index/home page ===== */
+.home-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-cat-pic{
+    justify-content: center;
+}
+
+.home-intro{
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Mission-title{
+    text-align: center;
+}
 
 
+.buttons-container{
+    border: 1px solid blueviolet;
+    
+
+}
 
 
 /* ===== Adopt & Foster page ===== */
@@ -262,27 +286,28 @@ body{
 }
 
 
+.disclaimer-section{
+    /* display: flex; */
+    background-color: white;
+    /* flex-direction: column; */
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
 .disclaimer-title{
     color: red;
     font-weight: bold;
-
 }
 
 .disclaimer{
     color: red;
 }
 
-.disclaimer section{
-    display: flex;
-    background: white;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    border: 2px solid black;
-    padding: 20px;
-    margin-bottom: 25px;
 
-}
 
 
 /* ------This footer is currently used for the home, gallery adn adopt page --------------*/
@@ -352,11 +377,7 @@ footer{
         border: 2px solid black;
     }
 
-    .cat-info{
 
-        /* display:flex;
-        flex-direction: row; */
-    }
 
 
 
