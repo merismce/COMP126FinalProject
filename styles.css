@@ -7,7 +7,9 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #FFE5EC;
 }
+
 
 nav {
     margin: 0 auto;
@@ -22,8 +24,6 @@ nav {
     text-decoration: none; 
     text-align: right;
     list-style-type: none;
-    background-color: #FB6F92;
-
 }
 
 
@@ -131,17 +131,22 @@ position: relative;
     margin-bottom: 40px;
 }
 
+#the-purpose{
+    margin-left: 20px;
+    margin-right:20px;
+}
+
 .Mission-title{
     text-align: center;
 }
 
-
 .buttons-container{
-    border: 1px solid blueviolet;
     display: grid;
     gap:20px;
     background-color: #FFB3C6;
     text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .button-one{
@@ -154,6 +159,8 @@ position: relative;
     padding-right: 0px; */
     padding-top: 30px;
     padding-bottom:30px;
+    margin-left: 20px;
+    margin-right:20px;
 }
 
 .button-two{
@@ -161,6 +168,8 @@ position: relative;
     background-color: #FF8FAB;
     border-radius: 50px;
     padding: 20px;
+    margin-left: 20px;
+    margin-right:20px;
 }
 
 .button-three{
@@ -168,6 +177,8 @@ position: relative;
     background-color: #FF8FAB;
     border-radius: 50px;
     padding: 20px;
+    margin-left: 20px;
+    margin-right:20px;
 }
 
 
@@ -250,19 +261,17 @@ h1{
     padding: 30px;
 }
 
-body{
-    background-color: #FFE5EC;
-}
-
 .gallery-container {
     padding: 20px;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
 }
 
-.gallery-card {
+.gallery-cards {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 20px;
+    gap: 50px;
     border: 2px solid black;
     padding: 20px;
     margin-bottom: 25px;
@@ -282,16 +291,16 @@ body{
     line-height: 1;
 }
 
-
 .disclaimer-section{
-    /* display: flex; */
     background-color: white;
-    /* flex-direction: column; */
     text-align: center;
     gap: 20px;
     padding: 20px;
     margin-top: 100px;
     margin-bottom: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    color: red;
 }
 
 .disclaimer-title{
@@ -299,9 +308,6 @@ body{
     font-weight: bold;
 }
 
-.disclaimer{
-    color: red;
-}
 
 
 
@@ -394,19 +400,27 @@ footer{
     /* stuuf for gallery page */
 
     h1{
-        border: 2px dotted grey ;
         border-radius: 20px;
     }
+
+    .gallery-container{
+        display: grid;
+        grid-template-columns: 3;
+        grid-template-rows: 1;
+    }
     
-    .gallery-card {
-        display: inline-block;
+    .gallery-cards {
+        /* display: inline-block; */
         /* flex-direction: column; */
-        gap: 10px;
+        display: grid;
+        grid-template-rows: 1;
+        grid-template-columns: 3;
+        gap: 60px;
         border: 2px solid black;
         padding: 20px;
         margin-bottom: 25px;
         background: #FFB3C6;
-        width: 30%;
+        width: 97%;
     }
 
     .gallery-photo {
@@ -415,6 +429,22 @@ footer{
         object-fit: cover;
         border: 2px solid black;
     }
+
+    .gallery-card-one{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .gallery-card-two{
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .gallery-card-three{
+        grid-row: 1;
+        grid-column: 3;
+    }
+
 
 
 
