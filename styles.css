@@ -374,6 +374,13 @@ footer{
   text-align: center; 
   width: 100%;
 max-width: 500px;} 
+
+
+.volunteer-pportunities-title{
+  margin-top:2rem;
+  margin-bottom:2rem;
+  text-align:center;
+}
   
 .volunteer-photo{ 
   object-fit: cover; 
