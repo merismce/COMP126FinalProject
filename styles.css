@@ -324,18 +324,19 @@ h1{
 
 footer{
     display: grid;
+    grid-template-columns: 2;
     gap: 10px;
-    text-align: end; 
+    text-align: center; 
     height: 100%;
     width:100%;
     background-color: #FB6F92;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding-top: 50px;
 }
 
 .footer-svg{
     grid-column: 1;
-    justify-content: space-around ;
+    justify-self: auto;
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -463,6 +464,10 @@ footer{
     text-decoration: none; 
     text-align: right;
     list-style-type: none;
+}
+footer{
+    text-align: end; 
+
 }
     
     /* nav {
