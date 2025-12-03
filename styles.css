@@ -368,23 +368,66 @@ footer{
 .container-volunteer{ 
   background-color: #FB6F92; 
   border-radius: 10px; 
-  height: 270px; 
+  /*height: 270px; */
   margin: 0 auto; 
   padding: 2rem; 
   text-align: center; 
-  width: 300px;} 
+  width: 100%;
+max-width: 500px;} 
+
+
+.volunteer-pportunities-title{
+  margin-top:2rem;
+  margin-bottom:2rem;
+  text-align:center;
+}
   
-  .volunteer-photo{ 
-    object-fit: cover; 
+.volunteer-photo{ 
+  object-fit: cover; 
     border: 2px solid black; 
-    object-position: inherit; 
-    width: 100%; height: 100%; 
-    border-radius:4px; }
+    width: 100%; 
+    height: auto; 
+    border-radius: 4px; }
 
 .volunteer-events-title{
   background-color: #FB6F92;
   border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
+/* event cards */ 
+.volunteer-event-section{
+  background: #FFE5EC; 
+  padding: 2rem; 
+  border-radius: 7px; 
+}
+
+.container-event{ 
+  padding: 20px;
+}
+
+.volunteer-event-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  border: #FFE5EC;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color:#FB6F92;
+  border-radius: 10px;
+}
+
+.volunteer-event-card img {
+  align-self: center;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+}
+
 
 
 
@@ -496,6 +539,15 @@ footer{
 
 
     /*  for Volunteer page */
+
+  .volunteer-event-card {
+    flex-direction: row;
+    align-items: center;
+  }
+    .volunteer-event-card img {
+    width: 160px;
+    height: auto;
+  }
 
 
 }
